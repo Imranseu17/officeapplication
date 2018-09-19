@@ -45,8 +45,12 @@ public class Customer_Controller {
 
     @GetMapping("/findcard_history/{cardNo}")
     public List<Card_History> findcard_history(@PathVariable("cardNo") String cardNo){
-
        return card_history_dao.findAllByCardNo(cardNo);
+    }
+
+    @GetMapping("/finderror_history/{cardNo}")
+    public List<Error_History> finderror_history(@PathVariable("cardNo") String cardNo){
+        return error_history_dao.findAllByCardNo(cardNo);
     }
 
 
