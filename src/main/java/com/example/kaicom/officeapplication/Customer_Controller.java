@@ -53,6 +53,14 @@ public class Customer_Controller {
         return error_history_dao.findAllByCardNo(cardNo);
     }
 
+    @GetMapping("/finderror_history/")
+    public List<Error_History> finderror_history(){
+        return error_history_dao.findAll();
+    }
+
+
+
+
 
 
 

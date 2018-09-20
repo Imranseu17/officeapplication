@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class Customer_info {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
     private  int id;
     private  String name;
     private  String accountNo;
